@@ -1,0 +1,23 @@
+{
+  "name": "ts-configs",
+  "version": "1.0.0",
+  "description": "",
+  "exports": {
+    ".": "./eslint/eslint.config.mjs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^9.2.0",
+    "eslint-plugin-jest": "^28.5.0",
+    "eslint-plugin-jest-formatting": "^3.1.0",
+    "eslint-plugin-perfectionist": "^2.10.0",
+    "eslint-plugin-sonarjs": "^1.0.3",
+    "eslint-plugin-unicorn": "^53.0.0",
+    "typescript-eslint": "^7.8.0"
+  }
+}
