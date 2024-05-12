@@ -52,4 +52,4 @@ const rule = {
   }
 };
 
-export const plugin = { rules: { "enforce-copyright-comment": rule } };
+export default { rules: { "enforce-copyright-comment": rule } };
