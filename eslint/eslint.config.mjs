@@ -22,9 +22,7 @@ export default tseslint.config(
   ...tseslint.configs.recommended,
   ...compat.extends(
     "plugin:perfectionist/recommended-natural",
-    "plugin:unicorn/recommended",
-    "plugin:jest/recommended",
-    "plugin:jest-formatting/strict"
+    "plugin:unicorn/recommended"
   ),
   {
     rules: {
