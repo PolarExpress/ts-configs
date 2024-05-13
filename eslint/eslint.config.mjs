@@ -90,6 +90,7 @@ export default tseslint.config(
       "addons",
       "coverage",
       "**/*.config.*",
+      "docs/**",
       "src/vite-env.d.ts"
     ]
   }
