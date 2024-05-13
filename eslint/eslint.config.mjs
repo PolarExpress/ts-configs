@@ -21,12 +21,14 @@ export default tseslint.config(
   eslint.configs.recommended,
   ...tseslint.configs.recommended,
   ...compat.extends(
-    "plugin:sonarjs/recommended",
     "plugin:perfectionist/recommended-natural",
     "plugin:unicorn/recommended",
     "plugin:jest/recommended",
     "plugin:jest-formatting/strict"
   ),
+  {
+    extends: ["plugin:sonarjs/recommended"]
+  },
   {
     rules: {
       "custom/enforce-copyright-comment": "error",
