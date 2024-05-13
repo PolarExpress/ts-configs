@@ -38,7 +38,6 @@ export default tseslint.config(
           selector: "default",
           trailingUnderscore: "allow"
         },
-
         {
           format: ["camelCase"],
           selector: "import"
