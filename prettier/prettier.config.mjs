@@ -6,7 +6,7 @@
  * (Department of Information and Computing Sciences)
  */
 
-export default config = {
+const config = {
   trailingComma: "none",
   tabWidth: 2,
   semi: true,
@@ -22,3 +22,5 @@ export default config = {
   jsdocSeparateTagGroups: true,
   jsdocVerticalAlignment: true
 };
+
+export default config;
