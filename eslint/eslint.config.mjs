@@ -21,11 +21,8 @@ export default tseslint.config(
   eslint.configs.recommended,
   ...tseslint.configs.recommended,
   ...compat.extends(
-    "plugin:sonarjs/recommended",
     "plugin:perfectionist/recommended-natural",
-    "plugin:unicorn/recommended",
-    "plugin:jest/recommended",
-    "plugin:jest-formatting/strict"
+    "plugin:unicorn/recommended"
   ),
   {
     rules: {
@@ -90,6 +87,7 @@ export default tseslint.config(
       "addons",
       "coverage",
       "**/*.config.*",
+      "docs/**",
       "src/vite-env.d.ts"
     ]
   }
