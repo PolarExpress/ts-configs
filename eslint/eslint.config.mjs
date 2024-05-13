@@ -83,11 +83,14 @@ export default tseslint.config(
   {
     ignores: [
       "build",
+      "dist",
       "data",
+      "public",
       "load_addons.js",
       "addons",
       "coverage",
-      "**/*.config.*"
+      "**/*.config.*",
+      "src/vite-env.d.ts"
     ]
   }
 );
