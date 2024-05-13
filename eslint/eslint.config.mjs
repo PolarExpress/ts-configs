@@ -27,9 +27,6 @@ export default tseslint.config(
     "plugin:jest-formatting/strict"
   ),
   {
-    extends: ["plugin:sonarjs/recommended"]
-  },
-  {
     rules: {
       "custom/enforce-copyright-comment": "error",
       "@typescript-eslint/naming-convention": [
