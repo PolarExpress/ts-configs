@@ -17,7 +17,19 @@ export default tseslint.config(
   {
     ignores: ["**/*.config.*"],
     plugins: { custom: copyrightPlugin },
+  },
+  eslint.configs.recommended,
+  ...tseslint.configs.recommended,
+  ...compat.extends(
+    "plugin:sonarjs/recommended",
+    "plugin:perfectionist/recommended-natural",
+    "plugin:unicorn/recommended",
+    "plugin:jest/recommended",
+    "plugin:jest-formatting/strict"
+  ),
+  {
     rules: {
+      "custom/enforce-copyright-comment": "error",
       "@typescript-eslint/naming-convention": [
         "error",
         {
@@ -50,7 +62,14 @@ export default tseslint.config(
           selector: "enumMember"
         }
       ],
-      "custom/enforce-copyright-comment": "error",
+      "unicorn/filename-case": [
+        "error",
+        {
+          case: "camelCase"
+        }
+      ],
+      "unicorn/no-array-callback-reference": "off",
+      "unicorn/prefer-top-level-await": "off",
       "unicorn/prevent-abbreviations": [
         "error",
         {
@@ -60,27 +79,6 @@ export default tseslint.config(
           }
         }
       ]
-    }
-  },
-  eslint.configs.recommended,
-  ...tseslint.configs.recommended,
-  ...compat.extends(
-    "plugin:sonarjs/recommended",
-    "plugin:perfectionist/recommended-natural",
-    "plugin:unicorn/recommended",
-    "plugin:jest/recommended",
-    "plugin:jest-formatting/strict"
-  ),
-  {
-    rules: {
-      "unicorn/filename-case": [
-        "error",
-        {
-          case: "camelCase"
-        }
-      ],
-      "unicorn/no-array-callback-reference": "off",
-      "unicorn/prefer-top-level-await": "off"
     }
   },
   {
