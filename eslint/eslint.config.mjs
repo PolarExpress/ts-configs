@@ -83,7 +83,7 @@ export default tseslint.config(
       "dist",
       "data",
       "public",
-      "load_addons.js",
+      "load_addons.ts",
       "addons",
       "coverage",
       "**/*.config.*",
