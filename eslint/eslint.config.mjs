@@ -16,7 +16,7 @@ const compat = new FlatCompat();
 export default tseslint.config(
   {
     ignores: ["**/*.config.*"],
-    plugins: { custom: copyrightPlugin },
+    plugins: { custom: copyrightPlugin }
   },
   eslint.configs.recommended,
   ...tseslint.configs.recommended,
@@ -86,6 +86,7 @@ export default tseslint.config(
       "load_addons.ts",
       "addons",
       "coverage",
+      "playwright-report",
       "**/*.config.*",
       "docs/**",
       "src/vite-env.d.ts"
