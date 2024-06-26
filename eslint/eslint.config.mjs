@@ -89,7 +89,8 @@ export default tseslint.config(
       "playwright-report",
       "**/*.config.*",
       "docs/**",
-      "src/vite-env.d.ts"
+      "src/vite-env.d.ts",
+      ".pnpm-store"
     ]
   }
 );
